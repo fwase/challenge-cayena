@@ -3,7 +3,7 @@ import os
 class Config():
     @staticmethod
     def get_home_path():
-        return os.path.dirname(os.getcwd())
+        return os.path.dirname(os.path.dirname(os.path.dirname(os.getcwd())))
 
     @staticmethod
     def get_path_model_store(prod_env=False):
